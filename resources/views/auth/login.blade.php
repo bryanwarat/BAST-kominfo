@@ -31,8 +31,7 @@
                                 </div>
 
                                 <div class="auth-title-section mb-4 text-lg-start text-center">
-                                    <h3 class="text-dark fw-semibold mb-3">Welcome back! Please login</h3>
-                                    <p class="text-muted fs-14 mb-0">Enter your credentials to access your account.</p>
+                                    <h3 class="text-dark fw-semibold mb-3">Login</h3>
                                 </div>
 
                                 {{-- Form Login --}}
@@ -75,13 +74,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 text-end">
-                                            @if (Route::has('password.request'))
-                                                <a class="text-muted fs-14" href="{{ route('password.request') }}">
-                                                    Forgot password?
-                                                </a>
-                                            @endif
-                                        </div>
+
                                     </div>
 
                                     <div class="form-group mb-0 row">
@@ -92,14 +85,6 @@
                                         </div>
                                     </div>
                                 </form>
-
-                                {{-- Register link --}}
-                                <div class="text-center text-muted">
-                                    <p class="mb-0">Don't have an account?
-                                        <a class="text-primary ms-2 fw-medium" href="{{ route('register') }}">Sign up</a>
-                                    </p>
-                                </div>
-
                             </div>
                         </div>
                     </div>
@@ -109,34 +94,5 @@
         </div>
     </div>
 
-    {{-- Bagian Kanan (Background + Carousel) --}}
-    <div class="col-xl-7 d-none d-xl-inline-block">
-        <div class="account-page-bg rounded-4">
-            <div class="auth-user-review text-center">
-                {{-- Carousel --}}
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <p class="prelead mb-2 text-white">"With Untitled, your support process can be as enjoyable as
-                                your product."</p>
-                            <h4 class="mb-1 text-white">Camilla Johnson</h4>
-                            <p class="mb-0 text-white">Software Developer</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p class="prelead mb-2 text-white">"Pretty nice theme, hoping you guys could add more features
-                                to this."</p>
-                            <h4 class="mb-1 text-white">Palak Awoo</h4>
-                            <p class="mb-0 text-white">Lead Designer</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p class="prelead mb-2 text-white">"This is a great product, helped us a lot and very quick to
-                                implement."</p>
-                            <h4 class="mb-1 text-white">Laurent Smith</h4>
-                            <p class="mb-0 text-white">Product Designer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 @endsection

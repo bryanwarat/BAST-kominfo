@@ -51,6 +51,18 @@
                     </a>
                 </li>
             </ul>
+
+
+            <ul id="side-menu">
+                <li class="menu-title">Konfigurasi</li>
+
+                <li class="">
+                    <a class="tp-link" href="{{ route('dashboard.index') }}">
+                        <i data-feather="users"></i><span> User </span>
+                    </a>
+                </li>
+
+            </ul>
         </div>
     </div>
 </div>

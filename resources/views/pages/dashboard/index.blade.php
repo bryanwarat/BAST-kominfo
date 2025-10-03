@@ -36,7 +36,7 @@
 
                                     <div>
                                         <p class="mb-2 text-dark fs-15 fw-medium">Total Barang</p>
-                                        <h3 class="mb-0 fs-22 text-dark me-3">5,786</h3>
+                                        <h3 class="mb-0 fs-22 text-dark me-3">52</h3>
                                     </div>
                                 </div>
 
@@ -67,7 +67,7 @@
 
                                     <div>
                                         <p class="mb-2 text-dark fs-15 fw-medium">Total BAST</p>
-                                        <h3 class="mb-0 fs-22 text-dark me-3">5,786</h3>
+                                        <h3 class="mb-0 fs-22 text-dark me-3">1</h3>
                                     </div>
                                 </div>
 
