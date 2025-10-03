@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
+            $table->string('skpd')->nullable();
+            $table->string('position')->nullable();
             $table->timestamps();
         });
     }

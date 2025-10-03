@@ -20,7 +20,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/employee/data', [EmployeeController::class, 'getData'])->name('employee.data');
     Route::get('employee/create', [EmployeeController::class, 'create'])->name('employee.create');
     Route::post('employee/store', [EmployeeController::class, 'store'])->name('employee.store');
-    Route::get('employee/detai/{id}', [EmployeeController::class, 'detail'])->name('employee.detail');
+    Route::get('employee/detail/{id}', [EmployeeController::class, 'detail'])->name('employee.detail');
     Route::get('employee/edit/{id}', [EmployeeController::class, 'edit'])->name('employee.edit');
     Route::put('employee/update/{id}', [EmployeeController::class, 'update'])->name('employee.update');
     Route::delete('employee/destroy/{id}', [EmployeeController::class, 'destroy'])->name('employee.destroy');
@@ -44,6 +44,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('bast/data', [App\Http\Controllers\BastController::class, 'data'])->name('bast.data');
     Route::get('bast/{id}/detail', [App\Http\Controllers\BastController::class, 'detail'])->name('bast.detail');
     Route::delete('bast/{id}/delete', [App\Http\Controllers\BastController::class, 'destroy'])->name('bast.destroy');
+
+    Route::resource('users', App\Http\Controllers\UserController::class);
 
 });
 

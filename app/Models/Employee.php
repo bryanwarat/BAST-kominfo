@@ -11,5 +11,7 @@ class Employee extends Model
         'name',
         'phone',
         'email',
+        'skpd',
+        'position',
     ];
 }

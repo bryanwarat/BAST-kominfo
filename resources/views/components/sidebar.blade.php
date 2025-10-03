@@ -56,8 +56,9 @@
             <ul id="side-menu">
                 <li class="menu-title">Konfigurasi</li>
 
-                <li class="">
-                    <a class="tp-link" href="{{ route('dashboard.index') }}">
+                <li class="{{ request()->routeIs('users.*') ? 'menuitem-active' : '' }}">
+                    <a class="tp-link {{ request()->routeIs('users.*') ? 'active' : '' }}"
+                        href="{{ route('users.index') }}">
                         <i data-feather="users"></i><span> User </span>
                     </a>
                 </li>
